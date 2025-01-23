@@ -9,8 +9,4 @@
 
 ## Acknowledgements
 
-Original code from [Sudoku Solver](https://www.c-sharpcorner.com/blogs/sudoku-solver)
-
-## Further information
-
-* [Rules of Sudoku](https://www.sudokuonline.io/tips/sudoku-rules)
+* Original code from [Sudoku Solver](https://www.c-sharpcorner.com/blogs/sudoku-solver) by [Rithik Banerjee](https://rithikbanerjee.github.io/profile/)
