@@ -19,7 +19,7 @@ public static class Program
       { '.', '.', '.', '.', '8', '.', '.', '7', '9' }
     };
 
-    if (SolveSudoku(sudoku))
+    if (Solve(sudoku))
     {
       for (var i = 0; i < sudoku.GetLength(0); i++)
       {
@@ -37,18 +37,13 @@ public static class Program
     }
   }
 
-  private static bool SolveSudoku(char[,] board)
+  private static bool Solve(char[,] board)
   {
     if (board == null || board.Length == 0)
     {
       return false;
     }
 
-    return Solve(board);
-  }
-
-  private static bool Solve(char[,] board)
-  {
     for (var i = 0; i < board.GetLength(0); i++)
     {
       for (var j = 0; j < board.GetLength(1); j++)
