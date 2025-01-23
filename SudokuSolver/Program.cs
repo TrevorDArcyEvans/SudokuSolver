@@ -1,5 +1,7 @@
 ﻿namespace SudokuSolver;
 
+using System;
+
 public static class Program
 {
   public static void Main(string[] args)
@@ -16,17 +18,33 @@ public static class Program
       { '.', '.', '.', '4', '1', '9', '.', '.', '5' },
       { '.', '.', '.', '.', '8', '.', '.', '7', '9' }
     };
-    SolveSudoku(sudoku);
+
+    if (SolveSudoku(sudoku))
+    {
+      for (var i = 0; i < sudoku.GetLength(0); i++)
+      {
+        for (var j = 0; j < sudoku.GetLength(1); j++)
+        {
+          Console.Write($"{sudoku[i, j]} ");
+        }
+
+        Console.WriteLine();
+      }
+    }
+    else
+    {
+      Console.WriteLine("Solution failed");
+    }
   }
 
-  private static void SolveSudoku(char[,] board)
+  private static bool SolveSudoku(char[,] board)
   {
     if (board == null || board.Length == 0)
     {
-      return;
+      return false;
     }
 
-    Solve(board);
+    return Solve(board);
   }
 
   private static bool Solve(char[,] board)
