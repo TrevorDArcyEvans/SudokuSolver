@@ -19,21 +19,31 @@ public static class Program
       { '.', '.', '.', '.', '8', '.', '.', '7', '9' }
     };
 
+    DumpBoard(sudoku);
+    Console.WriteLine();
+    Console.WriteLine("Attempting solution...");
+    Console.WriteLine();
+
     if (Solve(sudoku))
     {
-      for (var i = 0; i < sudoku.GetLength(0); i++)
-      {
-        for (var j = 0; j < sudoku.GetLength(1); j++)
-        {
-          Console.Write($"{sudoku[i, j]} ");
-        }
-
-        Console.WriteLine();
-      }
+      DumpBoard(sudoku);
     }
     else
     {
       Console.WriteLine("Solution failed");
+    }
+  }
+
+  private static void DumpBoard(char[,] sudoku)
+  {
+    for (var i = 0; i < sudoku.GetLength(0); i++)
+    {
+      for (var j = 0; j < sudoku.GetLength(1); j++)
+      {
+        Console.Write($"{sudoku[i, j]} ");
+      }
+
+      Console.WriteLine();
     }
   }
 
