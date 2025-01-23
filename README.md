@@ -54,7 +54,7 @@ dotnet run
 
 ## Further work
 
-* refactor to take sudoku puzzle from file on disk
+* ~~refactor to take sudoku puzzle from file on disk~~
 
 ## Acknowledgements
 
