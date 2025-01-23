@@ -25,12 +25,36 @@ Attempting solution...
 2 8 7 4 1 9 6 3 5 
 3 4 5 2 8 6 1 7 9 
 ```
+
 ## [Rules of Sudoku](https://www.sudokuonline.io/tips/sudoku-rules)
 
 1. Each row must contain the numbers from 1 to 9, without repetitions
 2. Each column must contain the numbers from 1 to 9, without repetitions
 3. The digits can only occur once per 3x3 block (nonet)
 4. The sum of every single row, column, and nonet must equal 45
+
+## Prerequisites
+
+* .NET 9 SDK
+
+## Getting started
+
+```bash
+# clone repo
+git clone https://github.com/TrevorDArcyEvans/SudokuSolver.git
+
+# build code
+cd SudokuSolver
+dotnet build
+
+# run code
+cd SudokuSolver
+dotnet run
+```
+
+## Further work
+
+* refactor to take sudoku puzzle from file on disk
 
 ## Acknowledgements
 
