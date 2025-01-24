@@ -49,12 +49,28 @@ dotnet build
 
 # run code
 cd SudokuSolver
-dotnet run
+dotnet run sudoku.txt
 ```
 
+## How it works
+
+From the [original article](https://www.c-sharpcorner.com/blogs/sudoku-solver);
+
+```text
+This problem can be best solved by a dynamic programming approach by
+using a recursive method to check for the valid sudoku board. Any
+other approach would make it a bit complex. So in this solution,
+we will keep adding each character from '1' to '9' and check whether
+it's valid for the baord or not. It's that simple, and given below
+is the C# pseudo code for the algorithm.
+```
 ## Further work
 
 * ~~refactor to take sudoku puzzle from file on disk~~
+
+## Further information
+
+* [Sudoku Solver](https://github.com/TrevorDArcyEvans/SudokuSolver)
 
 ## Acknowledgements
 
